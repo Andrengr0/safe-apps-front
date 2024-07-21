@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, CSSProperties } from 'react';
 import AppHeader from '../components/AppHeader';
 import AppCard from '../components/AppCard';
 import Curiosity from '../components/Curiosity';
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
   );
 };
 
-const homeStyle = {
+const homeStyle: CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -54,24 +54,24 @@ const homeStyle = {
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
   width: '100%',
-  boxSizing: 'border-box' as 'border-box',
+  boxSizing: 'border-box',
 };
 
-const introStyle = {
+const introStyle: CSSProperties = {
   textAlign: 'center',
   margin: '20px 0',
 };
 
-const introButtonStyle = {
+const introButtonStyle: CSSProperties = {
   height: '60px',
   cursor: 'pointer',
 };
 
-const cardsContainerStyle = {
+const cardsContainerStyle: CSSProperties = {
   textAlign: 'center',
 };
 
-const cardsStyle = {
+const cardsStyle: CSSProperties = {
   display: 'flex',
   justifyContent: 'center',
   flexWrap: 'wrap',

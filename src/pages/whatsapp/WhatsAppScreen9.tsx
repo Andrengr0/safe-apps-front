@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './WhatsAppScreen.css';
 
 const WhatsAppScreen9: React.FC = () => {
