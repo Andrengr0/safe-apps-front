@@ -31,7 +31,7 @@ const Home: React.FC = () => {
       <div style={cardsContainerStyle}>
         <h3 className='open-sans-500'>Escolha uma trilha de aprendizado abaixo:</h3>
         <div style={cardsStyle}>
-          <AppCard icon={instagramIcon} alt="Instagram" route="/instagram" />
+          <AppCard icon={instagramIcon} alt="Instagram" route="/instagram/1" />
           <AppCard icon={whatsappIcon} alt="WhatsApp" route="/whatsapp/1" />
           <AppCard icon={tiktokIcon} alt="TikTok" route="/tiktok" />
           <AppCard icon={jogosIcon} alt="Cassinos" route="/jogos" />
