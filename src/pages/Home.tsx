@@ -34,7 +34,7 @@ const Home: React.FC = () => {
           <AppCard icon={instagramIcon} alt="Instagram" route="/instagram/1" />
           <AppCard icon={whatsappIcon} alt="WhatsApp" route="/whatsapp/1" />
           <AppCard icon={tiktokIcon} alt="TikTok" route="/tiktok" />
-          <AppCard icon={jogosIcon} alt="Cassinos" route="/jogos" />
+          <AppCard icon={jogosIcon} alt="Cassinos" route="/cassinos" />
         </div>
       </div>
       <Curiosity />
