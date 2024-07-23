@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.scss';
+import { motion } from 'framer-motion';
 
 interface AppCardProps {
   icon: string;
@@ -11,10 +12,14 @@ interface AppCardProps {
 const AppCard: React.FC<AppCardProps> = ({ icon, alt, route }) => {
   return (
     <Link to={route} style={linkStyle}>
-      <div style={cardStyle}>
+      <motion.div 
+        style={cardStyle} 
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
         <img src={icon} alt={alt} style={iconStyle} />
         <p className='open-sans-500' style={textStyle}>{alt}</p>
-      </div>
+      </motion.div>
     </Link>
   );
 };
