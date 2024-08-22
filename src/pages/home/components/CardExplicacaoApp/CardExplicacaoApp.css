@@ -1,0 +1,16 @@
+.card-explicacao-app {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.card-explicacao-app img {
+    float: left;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    width: 6rem;
+    height: 9rem;
+    border-radius: 10px;
+}

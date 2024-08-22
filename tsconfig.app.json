@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.json",  // Herda as configurações do tsconfig.json principal
   "compilerOptions": {
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",

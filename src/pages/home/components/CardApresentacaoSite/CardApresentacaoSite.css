@@ -1,0 +1,34 @@
+.card-apresentacao-site {
+    position: relative; /* Permite que o pseudo-elemento seja posicionado em relação ao card */
+    color: #fff;
+    padding: 1rem;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #413783; /* Define a cor do fundo do card */
+    z-index: 1; /* Garante que o conteúdo do card fique acima do pseudo-elemento */
+}
+
+.card-apresentacao-site::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #413783;
+    transform: skewX(-30deg);
+    transform-origin: top left;
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo do card */
+}
+
+.card-apresentacao-site p{
+    width: 100%;
+}
+
+.card-apresentacao-site img {
+    margin-top: 0.5rem;
+    float: right;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+}
