@@ -56,16 +56,18 @@ const SeriesSection: React.FC = () => {
         <div className="series-section">
             <Container>
                 <h2 className="section-title">Escolha uma das nossas séries de aprendizado:</h2>
-                <div className="series-card-wrapper">
-                    {seriesData.map((series, index) => (
-                        <CardSeries
-                            key={index}
-                            title={series.title}
-                            description={series.description}
-                            imageUrl={series.imageUrl}
-                            episodes={series.episodes}
-                        />
-                    ))}
+                <div className="series-card-container">
+                    <div className="series-card-wrapper">
+                        {seriesData.map((series, index) => (
+                            <CardSeries
+                                key={index}
+                                title={series.title}
+                                description={series.description}
+                                imageUrl={series.imageUrl}
+                                episodes={series.episodes}
+                            />
+                        ))}
+                    </div>
                 </div>
             </Container>
         </div>
