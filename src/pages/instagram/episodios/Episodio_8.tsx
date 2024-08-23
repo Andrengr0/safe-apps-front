@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './InstagramScreen.css';
 
-const InstagramScreen8: React.FC = () => {
+const Episodio_8: React.FC = () => {
   return (
     <div className="instagram-screen">
       <div className="instagram-container">
@@ -23,4 +23,4 @@ const InstagramScreen8: React.FC = () => {
   );
 };
 
-export default InstagramScreen8;
+export default Episodio_8;

@@ -7,14 +7,13 @@
 .section-title {
     text-align: center;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 1em;
 }
 
 .series-card-container{
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    background-color: #ccc;
 }
 
 .series-card-wrapper {

@@ -2,19 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './WhatsAppScreen.css';
 
-const WhatsAppScreen8: React.FC = () => {
+const Episodio_6: React.FC = () => {
   return (
     <div className="whatsapp-screen">
       <div className="whatsapp-container">
         <h1 className="cabecalho">Episódio #01 - Whatsapp: medidas protetivas</h1>
-        <h4 className="description text-center">Que tal agora testar seus conhecimentos adquiridos ao longo dessa jornada?</h4>
-        <h6 className="description text-center mt-4">Temos um QUIZZ divertido para analisar seu aprendizado e ao final terá sua pontuação!</h6>
+        <p className="box-write">
+          Já verificou se seu aplicativo está atualizado? observe como fazer:
+        </p>
+        <div className="box-video mt-4">
+          <iframe src="https://www.youtube.com/embed/O4udI1E9GDg" allowFullScreen></iframe>
+        </div>
 
         <div className="buttons">
-          <Link to="/whatsapp/9">
-            <button className="btn btn_verde mt-5">Iniciar QUIZZ</button>
-          </Link>
           <Link to="/whatsapp/7">
+            <button className="btn btn_amarelo mt-5">Ver +dicas</button>
+          </Link>
+          <Link to="/whatsapp/5">
             <button className="btn btn_cinza mt-4 mb-5">Voltar</button>
           </Link>
         </div>
@@ -23,4 +27,4 @@ const WhatsAppScreen8: React.FC = () => {
   );
 };
 
-export default WhatsAppScreen8;
+export default Episodio_6;

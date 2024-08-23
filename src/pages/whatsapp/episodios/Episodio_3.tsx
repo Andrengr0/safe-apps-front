@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './WhatsAppScreen.css';
 
-const WhatsAppScreen3: React.FC = () => {
+const Episodio_3: React.FC = () => {
   return (
     <div className="whatsapp-screen">
       <div className="whatsapp-container">
@@ -25,4 +25,4 @@ const WhatsAppScreen3: React.FC = () => {
   );
 };
 
-export default WhatsAppScreen3;
+export default Episodio_3;

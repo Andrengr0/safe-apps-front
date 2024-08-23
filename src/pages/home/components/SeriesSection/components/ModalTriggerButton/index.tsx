@@ -6,9 +6,10 @@ interface ModalTriggerButtonProps {
     description: string;
     imageUrl: string;
     episodes: Array<{ title: string; description: string }>;
+    platform: string;  // Adicionando a propriedade platform
 }
 
-const ModalTriggerButton: React.FC<ModalTriggerButtonProps> = ({ title, description, imageUrl, episodes }) => {
+const ModalTriggerButton: React.FC<ModalTriggerButtonProps> = ({ title, description, imageUrl, episodes, platform }) => {
     const [isModalOpen, setModalOpen] = useState(false);
 
     const openModal = () => setModalOpen(true);
@@ -16,7 +17,7 @@ const ModalTriggerButton: React.FC<ModalTriggerButtonProps> = ({ title, descript
 
     return (
         <>
-            <button className="button-action" onClick={openModal}>I am a button</button>
+            <button className="button-action" onClick={openModal}>Ver Série</button> {/* Alterando o texto do botão */}
             <Modal
                 isOpen={isModalOpen}
                 onClose={closeModal}
@@ -24,6 +25,7 @@ const ModalTriggerButton: React.FC<ModalTriggerButtonProps> = ({ title, descript
                 description={description}
                 imageUrl={imageUrl}
                 episodes={episodes}
+                platform={platform}  // Passando a plataforma para o Modal
             />
         </>
     );

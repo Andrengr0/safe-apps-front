@@ -5,7 +5,7 @@ import hackerImg from './images/hacker_roubando_informacoes_celular.jpg';
 import jovensImg from './images/jovens_no_celular.jpg';
 import wifiImg from './images/simbolo_wifi_free2.png';
 
-const WhatsAppScreen7: React.FC = () => {
+const Episodio_7: React.FC = () => {
   return (
     <div className="whatsapp-screen">
       <div className="whatsapp-container">
@@ -40,4 +40,4 @@ const WhatsAppScreen7: React.FC = () => {
   );
 };
 
-export default WhatsAppScreen7;
+export default Episodio_7;

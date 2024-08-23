@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './WhatsAppScreen.css';
 
-const WhatsAppScreen9: React.FC = () => {
+const Episodio_9: React.FC = () => {
   const [responses, setResponses] = useState({ pg1: '', pg2: '', pg3: '', pg4: '', pg5: '' });
   const [feedback, setFeedback] = useState('');
   const [score, setScore] = useState<number | null>(null);
@@ -195,4 +195,4 @@ const WhatsAppScreen9: React.FC = () => {
   );
 };
 
-export default WhatsAppScreen9;
+export default Episodio_9;

@@ -52,14 +52,18 @@
     margin-top: 20px;
 }
 
-
-/* EpisodeCard CSS (Incorporado ao Modal.css para Simplicidade): */
-
 .episode-card {
     background-color: #333;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.episode-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,10 +74,17 @@
     color: white;
 }
 
-.episode-description {
+.episode-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.episode-content > .episode-description {
     font-size: 14px;
     color: white;
-    flex-grow: 1;
+    margin-top: 10px;
     margin-left: 10px;
 }
 
@@ -84,4 +95,19 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 9em;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.toggle-button {
+    background-color: transparent;
+    color: #e63946;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+    text-transform: uppercase;
 }

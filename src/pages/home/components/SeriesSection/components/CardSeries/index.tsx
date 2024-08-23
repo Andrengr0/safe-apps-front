@@ -7,9 +7,10 @@ interface CardSeriesProps {
     description: string;
     imageUrl: string;
     episodes: Array<{ title: string; description: string }>;
+    platform: string;  // Adicionando a propriedade platform
 }
 
-const CardSeries: React.FC<CardSeriesProps> = ({ title, description, imageUrl, episodes }) => {
+const CardSeries: React.FC<CardSeriesProps> = ({ title, description, imageUrl, episodes, platform }) => {
     return (
         <div className="card-series">
             <img src={imageUrl} alt={title} className="card-series-image" />
@@ -21,6 +22,7 @@ const CardSeries: React.FC<CardSeriesProps> = ({ title, description, imageUrl, e
                     description={description}
                     imageUrl={imageUrl}
                     episodes={episodes}
+                    platform={platform}  // Passando a plataforma para o ModalTriggerButton
                 />
             </div>
         </div>
