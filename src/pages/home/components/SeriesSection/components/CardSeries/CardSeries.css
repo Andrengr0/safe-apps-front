@@ -1,0 +1,45 @@
+.card-series {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    width: 100%;
+    max-width: 15rem;
+    text-align: justify;
+}
+
+.card-series-image {
+    display: block;
+    margin: 0 auto 1em auto;
+    width: 4em;
+}
+
+.card-series-title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-series-description {
+    font-size: 14px;
+    margin-bottom: 1.5em;
+}
+
+.card-series-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.button-action {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-link {
+    color: #A8DADC;
+    text-decoration: none;
+}

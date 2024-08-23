@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '@/components/container';
-import CardExplicacaoApp from '../CardExplicacaoApp';
-import CardApresentacaoSite from '../CardApresentacaoSite';
+import CardExplicacaoApp from './components/CardExplicacaoApp';
+import CardApresentacaoSite from './components/CardApresentacaoSite';
 import './PresentationSection.css';
 import backgroundImage from '@/assets/images/bg_image.jpg';
 
