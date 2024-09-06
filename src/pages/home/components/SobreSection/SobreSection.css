@@ -1,0 +1,42 @@
+
+.sobre-bg{
+    background-color: #d6d6d6;
+    width: 100%;
+    padding-top: 0.6rem;
+    padding-bottom: 3rem;
+}
+
+.sobre-section{
+    background-color: #000D23;
+    padding: 4rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 50rem;
+    border-radius: 15px;
+    color: #d6d6d6;
+}
+
+.sobre-section h2{
+    margin: 0;
+    padding-bottom: 1.1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sobre-section p{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.sobre-image{
+    width: 100%;
+    margin-top: 1.2rem;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px){
+    .sobre-section{
+        border-radius: 0;
+    }
+}

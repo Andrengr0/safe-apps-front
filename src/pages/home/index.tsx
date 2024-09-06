@@ -3,7 +3,9 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import PresentationSection from './components/PresentationSection';
 import SeriesSection from './components/SeriesSection';
+import CuriositySection from './components/CuriositySection';
 import './Home.css';
+import SobreSection from './components/SobreSection';
 
 const Home: React.FC = () => {
     return (
@@ -11,6 +13,8 @@ const Home: React.FC = () => {
             <Header />
             <PresentationSection />
             <SeriesSection />
+            <CuriositySection />
+            <SobreSection />
             <Footer />
         </div>
     );
