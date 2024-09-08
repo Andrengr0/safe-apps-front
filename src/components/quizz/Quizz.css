@@ -1,0 +1,81 @@
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .quiz-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Questões */
+  .quiz-question {
+    margin-bottom: 20px;
+  }
+  
+  .question-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Opções */
+  .options-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option-label {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .option-input {
+    margin-right: 10px;
+    accent-color: #4CAF50; /* Cor do input de radio quando selecionado */
+  }
+  
+  /* Botão de envio */
+  .submit-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .quiz-form {
+      padding: 15px;
+    }
+  
+    .question-title {
+      font-size: 1rem;
+    }
+  
+    .option-label {
+      font-size: 0.9rem;
+    }
+  
+    .submit-btn {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  

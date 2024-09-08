@@ -7,7 +7,8 @@ import EpisodeWhatsApp2 from './pages/whatsapp/episodios/Episodio_2';
 
 import EpisodeInstagram1 from './pages/instagram/episodios/Episodio_1';
 import EpisodeInstagram2 from './pages/instagram/episodios/Episodio_2';
-// Continue importando os episódios conforme necessário...
+
+import QuizzWhatsapp from './pages/quizzes/quizzWhatsapp';
 import './App.css';
 
 const App: React.FC = () => {
@@ -20,6 +21,8 @@ const App: React.FC = () => {
         {/* Continue adicionando rotas para os outros episódios de WhatsApp */}
         <Route path="/instagram/episodio/1" element={<EpisodeInstagram1 />} />
         <Route path="/instagram/episodio/2" element={<EpisodeInstagram2 />} />
+
+        <Route path="/quizzes/whatsapp" element={<QuizzWhatsapp />} />
         {/* Continue adicionando rotas para os outros episódios de Instagram */}
       </Routes>
     </Router>
