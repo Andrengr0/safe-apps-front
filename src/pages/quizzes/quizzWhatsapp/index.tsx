@@ -1,8 +1,9 @@
 import React from 'react';
 import Quiz from '@/components/quizz';
+import '../QuizTema.css';
 
 const QuizzWhatsapp: React.FC = () => {
-  // Questões do quiz antigo adaptadas para o formato do componente Quiz
+  // Questões do quiz
   const questions = [
     {
       id: 1,
@@ -60,15 +61,10 @@ const QuizzWhatsapp: React.FC = () => {
     }
   ];
 
-  // Função para tratar o envio do quiz
-  const handleQuizSubmit = (score: number) => {
-    alert(`Você acertou ${score} de ${questions.length} questões!`);
-  };
-
   return (
-    <div>
-      <h1>Episódio #01 - Whatsapp: Medidas Protetivas</h1>
-      <Quiz questions={questions} onSubmit={handleQuizSubmit} />
+    <div className='quizz-tema-whatsapp'>
+      <h1 className='tittle-quizz-tema'>Quiz Whatsapp</h1>
+      <Quiz questions={questions} />
     </div>
   );
 };
