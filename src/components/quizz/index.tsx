@@ -20,6 +20,7 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
   const [score, setScore] = useState<number | null>(null); // Armazena a pontuação
   const [feedback, setFeedback] = useState<string | null>(null); // Armazena o feedback
   const [isModalOpen, setIsModalOpen] = useState(false); // Controla o estado do modal de feedback
+  const [isIncompleteModalOpen, setIsIncompleteModalOpen] = useState(false); // Estado para o modal de questões não respondidas
 
   const question = questions[currentQuestion];
   const totalQuestions = questions.length;
@@ -38,6 +39,16 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
   };
 
   const onSubmitQuiz: SubmitHandler<any> = (data) => {
+
+    const unansweredQuestions = questions.filter(
+      (question) => !data[question.id]
+    );
+  
+    if (unansweredQuestions.length > 0) {
+      setIsIncompleteModalOpen(true); // Abre o modal de alerta
+      return; // Não envia o quiz
+    }
+
     let totalScore = 0;
 
     questions.forEach((question) => {
@@ -70,6 +81,10 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  const closeIncompleteModal = () => {
+    setIsIncompleteModalOpen(false);
+  };  
 
   return (
     <div>
@@ -155,15 +170,30 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
           </div>
 
           <div className="navigation-buttons">
-            {currentQuestion > 0 && (
-              <button type="button" className="prev-btn" onClick={handlePrev}>
-                Anterior
-              </button>
-            )}
+            <button
+              type="button"
+              className={`prev-btn ${currentQuestion === 0 ? 'invisible' : ''}`}
+              onClick={handlePrev}
+              disabled={currentQuestion === 0}
+            >
+              Anterior
+            </button>
 
-            {currentQuestion < totalQuestions - 1 && (
+            {currentQuestion < totalQuestions - 1 ? (
               <button type="button" className="next-btn" onClick={handleNext}>
                 Próxima
+              </button>
+            ) : score === null ? (
+              <button type="submit" className="submit-btn">
+                Enviar Quiz
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="retry-btn"
+                onClick={() => window.location.reload()}
+              >
+                Refazer Quiz
               </button>
             )}
           </div>
@@ -177,6 +207,19 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
             <h2>Seu resultado: {score} pontos</h2>
             <p>{feedback}</p>
             <button className="close-btn" onClick={closeModal}>
+              Fechar
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Modal de alerta de questões não respondidas */}
+      {isIncompleteModalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <h2>Atenção!</h2>
+            <p>Por favor, responda todas as questões antes de enviar o quiz.</p>
+            <button className="close-btn" onClick={closeIncompleteModal}>
               Fechar
             </button>
           </div>
