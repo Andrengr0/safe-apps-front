@@ -5,7 +5,7 @@ import PresentationSection from './components/PresentationSection';
 import SeriesSection from './components/SeriesSection';
 import CuriositySection from './components/CuriositySection';
 import './Home.css';
-import SobreSection from './components/SobreSection';
+import SobreSection from '../../components/SobreSection';
 import QuizzSection from './components/QuizzSection';
 
 const Home: React.FC = () => {

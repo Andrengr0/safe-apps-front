@@ -46,7 +46,7 @@ const seriesData = [
     },
     {
         title: 'Cassinos',
-        description: 'Entenda os riscos dos jogos de azar e apostas online, e se defenda contra possíveis danos financeiros ou psicológicos.',
+        description: 'Entenda os riscos dos jogos de apostas online, e se defenda contra possíveis danos financeiros ou psicológicos.',
         imageUrl: cassinosImage,
         platform: 'cassinos',
         episodes: [

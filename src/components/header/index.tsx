@@ -32,27 +32,29 @@ const Header: React.FC = () => {
 
     return (
         <Container>
-        <header className="header">
-                <div className="logo">
-                    <img src="/images/logo_safeApps.png" alt="SafeApps Logo" className="logo-image" />
-                </div>
-                {/* Menu para telas maiores */}
-                <nav className="nav">
-                    <ul>
-                        <li><a href="/series-de-aprendizado">Séries de Aprendizado</a></li>
-                        <li><a href="/quizzes">Quizzes</a></li>
-                        <li><a href="/sobre-nos">Sobre Nós</a></li>
-                    </ul>
-                </nav>
-                {/* Menu para telas menores (só renderiza se for mobile) */}
-                {isMobile && (
-                    <Menu right isOpen={isMenuOpen} onStateChange={handleStateChange} className="mobile-menu">
-                        <a id="home" className="menu-item" href="/series-de-aprendizado" onClick={closeMenu}>Séries de Aprendizado</a>
-                        <a id="about" className="menu-item" href="/quizzes" onClick={closeMenu}>Quizzes</a>
-                        <a id="contact" className="menu-item" href="/sobre-nos" onClick={closeMenu}>Sobre Nós</a>
-                    </Menu>
-                )}
-        </header>
+            <div className='container-header'>
+                <header className="header">
+                        <div className="logo">
+                            <img src="/images/logo_safeApps.png" alt="SafeApps Logo" className="logo-image" />
+                        </div>
+                        {/* Menu para telas maiores */}
+                        <nav className="nav">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/series-de-aprendizado">Séries de Aprendizado</a></li>
+                                <li><a href="/sobre">Sobre Nós</a></li>
+                            </ul>
+                        </nav>
+                        {/* Menu para telas menores (só renderiza se for mobile) */}
+                        {isMobile && (
+                            <Menu right isOpen={isMenuOpen} onStateChange={handleStateChange} className="mobile-menu">
+                                <a id="home" className="menu-item" href="/" onClick={closeMenu}>Home</a>
+                                <a id="series" className="menu-item" href="/series-de-aprendizado" onClick={closeMenu}>Séries de Aprendizado</a>
+                                <a id="contact" className="menu-item" href="/sobre-nos" onClick={closeMenu}>Sobre Nós</a>
+                            </Menu>
+                        )}
+                </header>
+            </div>
         </Container>
     );
 };

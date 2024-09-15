@@ -11,19 +11,26 @@ import EpisodeInstagram2 from './pages/instagram/episodios/Episodio_2';
 import QuizzWhatsapp from './pages/quizzes/quizzWhatsapp';
 import './App.css';
 
+import Sobre from './pages/sobre';
+
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<Sobre/>} />
+
+
         <Route path="/whatsapp/episodio/1" element={<EpisodeWhatsApp1 />} />
         <Route path="/whatsapp/episodio/2" element={<EpisodeWhatsApp2 />} />
-        {/* Continue adicionando rotas para os outros episódios de WhatsApp */}
+        
+
         <Route path="/instagram/episodio/1" element={<EpisodeInstagram1 />} />
         <Route path="/instagram/episodio/2" element={<EpisodeInstagram2 />} />
 
+
         <Route path="/quizzes/whatsapp" element={<QuizzWhatsapp />} />
-        {/* Continue adicionando rotas para os outros episódios de Instagram */}
+        
       </Routes>
     </Router>
   );

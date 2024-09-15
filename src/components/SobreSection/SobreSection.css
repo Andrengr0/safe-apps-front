@@ -2,14 +2,14 @@
 .sobre-bg{
     background-color: #d6d6d6;
     width: 100%;
-    padding-top: 0.6rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
 .sobre-section{
     background-color: #000D23;
-    padding: 4rem;
     margin: 0 auto;
+    padding: 2rem 0.8rem;
     width: 100%;
     max-width: 50rem;
     border-radius: 15px;
@@ -27,15 +27,27 @@
 .sobre-section p{
     font-size: 1rem;
     text-align: justify;
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
 }
 
 .sobre-image{
     width: 100%;
-    margin-top: 1.2rem;
+    max-width: 42rem;
+    display: block;
+    margin: 1.2rem auto 0 auto;
     border-radius: 8px;
 }
 
 @media (max-width: 768px){
+
+    .sobre-bg{
+        background-color: #d6d6d6;
+        width: 100%;
+        padding: 0;
+    }
+
     .sobre-section{
         border-radius: 0;
     }

@@ -23,6 +23,7 @@
 
 .card-apresentacao-site p{
     width: 100%;
+    text-align: justify;
 }
 
 .card-apresentacao-site img {
@@ -31,4 +32,17 @@
     width: 10rem;
     height: 10rem;
     border-radius: 10px;
+    margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .card-apresentacao-site::before {
+        display: none;
+    }
+
+    .card-apresentacao-site {
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+    }
 }
