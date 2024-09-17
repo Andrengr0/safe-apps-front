@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './InstagramScreen.css';
-import hackerImg from './images/vista-frontal-do-hacker.jpg';
-import wifiImg from './images/wifi-publico.png';
+import hackerImg from '../images/vista-frontal-do-hacker.jpg';
+import wifiImg from '../images/wifi-publico.png';
 
 const Episodio_7: React.FC = () => {
   return (
