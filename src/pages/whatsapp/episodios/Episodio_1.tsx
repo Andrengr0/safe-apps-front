@@ -22,7 +22,7 @@ const Episodio_1: React.FC = () => {
         </div>
 
         <div className="buttons">
-          <Link to="/whatsapp/2">
+          <Link to="/whatsapp/episodio/2">
             <button className="btn btn_amarelo">Ir para desafio</button>
           </Link>
           <Link to="/">

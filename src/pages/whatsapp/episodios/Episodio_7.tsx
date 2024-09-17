@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './WhatsAppScreen.css';
-import hackerImg from './images/hacker_roubando_informacoes_celular.jpg';
-import jovensImg from './images/jovens_no_celular.jpg';
-import wifiImg from './images/simbolo_wifi_free2.png';
+import hackerImg from '../images/hacker_roubando_informacoes_celular.jpg';
+import jovensImg from '../images/jovens_no_celular.jpg';
+import wifiImg from '../images/simbolo_wifi_free2.png';
 
 const Episodio_7: React.FC = () => {
   return (
@@ -28,10 +28,10 @@ const Episodio_7: React.FC = () => {
         </div>
 
         <div className="buttons">
-          <Link to="/whatsapp/8">
+          <Link to="/whatsapp/episodio/8">
             <button className="btn btn_amarelo mt-5">Avançar</button>
           </Link>
-          <Link to="/whatsapp/6">
+          <Link to="/whatsapp/episodio/6">
             <button className="btn btn_cinza mt-4 mb-5">Voltar</button>
           </Link>
         </div>

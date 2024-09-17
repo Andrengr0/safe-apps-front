@@ -19,7 +19,12 @@ const seriesData = [
         episodes: [
             { title: 'Episódio 01', description: 'Navegando com Segurança...' },
             { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
-            // Mais episódios...
+            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
         ]
     },
     {

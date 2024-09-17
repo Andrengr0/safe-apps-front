@@ -15,10 +15,10 @@ const Episodio_6: React.FC = () => {
         </div>
 
         <div className="buttons">
-          <Link to="/whatsapp/7">
+          <Link to="/whatsapp/episodio/7">
             <button className="btn btn_amarelo mt-5">Ver +dicas</button>
           </Link>
-          <Link to="/whatsapp/5">
+          <Link to="/whatsapp/episodio/5">
             <button className="btn btn_cinza mt-4 mb-5">Voltar</button>
           </Link>
         </div>

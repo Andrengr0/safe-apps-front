@@ -4,6 +4,12 @@ import Home from './pages/home';
 
 import EpisodeWhatsApp1 from './pages/whatsapp/episodios/Episodio_1';
 import EpisodeWhatsApp2 from './pages/whatsapp/episodios/Episodio_2';
+import EpisodeWhatsApp3 from './pages/whatsapp/episodios/Episodio_3';
+import EpisodeWhatsApp4 from './pages/whatsapp/episodios/Episodio_4';
+import EpisodeWhatsApp5 from './pages/whatsapp/episodios/Episodio_5';
+import EpisodeWhatsApp6 from './pages/whatsapp/episodios/Episodio_6';
+import EpisodeWhatsApp7 from './pages/whatsapp/episodios/Episodio_7';
+import EpisodeWhatsApp8 from './pages/whatsapp/episodios/Episodio_8';
 
 import EpisodeInstagram1 from './pages/instagram/episodios/Episodio_1';
 import EpisodeInstagram2 from './pages/instagram/episodios/Episodio_2';
@@ -23,6 +29,12 @@ const App: React.FC = () => {
 
         <Route path="/whatsapp/episodio/1" element={<EpisodeWhatsApp1 />} />
         <Route path="/whatsapp/episodio/2" element={<EpisodeWhatsApp2 />} />
+        <Route path="/whatsapp/episodio/3" element={<EpisodeWhatsApp3 />} />
+        <Route path="/whatsapp/episodio/4" element={<EpisodeWhatsApp4 />} />
+        <Route path="/whatsapp/episodio/5" element={<EpisodeWhatsApp5 />} />
+        <Route path="/whatsapp/episodio/6" element={<EpisodeWhatsApp6 />} />
+        <Route path="/whatsapp/episodio/7" element={<EpisodeWhatsApp7 />} />
+        <Route path="/whatsapp/episodio/8" element={<EpisodeWhatsApp8 />} />
         
 
         <Route path="/instagram/episodio/1" element={<EpisodeInstagram1 />} />
