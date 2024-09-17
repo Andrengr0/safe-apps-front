@@ -24,7 +24,7 @@ const Episodio_1: React.FC = () => {
         <h6 style={{textAlign: 'center'}}>Está pronto para um desafio?</h6>
 
         <div className="buttons">
-          <Link to="/instagram/2">
+          <Link to="/instagram/episodio/2">
             <button className="btn btn_amarelo">Ir para desafio</button>
           </Link>
           <Link to="/">

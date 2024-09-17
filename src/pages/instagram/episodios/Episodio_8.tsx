@@ -11,10 +11,10 @@ const Episodio_8: React.FC = () => {
         <h6 className="description">Temos um QUIZZ divertido para analisar seu aprendizado e ao final terá sua pontuação!</h6>
 
         <div className="buttons">
-          <Link to="/instagram/9">
+          <Link to="/quizzes/instagram">
             <button className="btn btn_verde">Iniciar QUIZZ</button>
           </Link>
-          <Link to="/instagram/7">
+          <Link to="/instagram/episodio/7">
             <button className="btn btn_cinza">Voltar</button>
           </Link>
         </div>

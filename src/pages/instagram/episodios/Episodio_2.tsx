@@ -11,10 +11,10 @@ const Episodio_2: React.FC = () => {
           Está lançado o seguinte desafio: Repita o processo do vídeo sobre "verificação em duas etapas", quando terminado clique no botão “Desafio concluído” para avançar a próxima fase do conteúdo. Você pode também escolher voltar a página anterior para assistir ao vídeo novamente.
         </p>
         <div className="buttons">
-          <Link to="/instagram/1">
+          <Link to="/instagram/episodio/1">
             <button className="btn btn_cinza">Voltar</button>
           </Link>
-          <Link to="/instagram/3">
+          <Link to="/instagram/episodio/3">
             <button className="btn btn_verde">Desafio concluído</button>
           </Link>
         </div>

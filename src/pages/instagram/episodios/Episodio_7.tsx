@@ -30,10 +30,10 @@ const Episodio_7: React.FC = () => {
         </div>
 
         <div className="buttons">
-          <Link to="/instagram/8">
+          <Link to="/instagram/episodio/8">
             <button className="btn btn_amarelo">Avançar</button>
           </Link>
-          <Link to="/instagram/6">
+          <Link to="/instagram/episodio/6">
             <button className="btn btn_cinza">Voltar</button>
           </Link>
         </div>

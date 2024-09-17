@@ -11,7 +11,7 @@ const QuizzSection: React.FC = () => {
     }
 
     function redirecionaQuizInstagram(){
-        navigate('/quizzes/whatsapp')
+        navigate('/quizzes/instagram')
     }
 
     function redirecionaQuizTiktok(){

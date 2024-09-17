@@ -13,6 +13,12 @@ import EpisodeWhatsApp8 from './pages/whatsapp/episodios/Episodio_8';
 
 import EpisodeInstagram1 from './pages/instagram/episodios/Episodio_1';
 import EpisodeInstagram2 from './pages/instagram/episodios/Episodio_2';
+import EpisodeInstagram3 from './pages/instagram/episodios/Episodio_3';
+import EpisodeInstagram4 from './pages/instagram/episodios/Episodio_4';
+import EpisodeInstagram5 from './pages/instagram/episodios/Episodio_5';
+import EpisodeInstagram6 from './pages/instagram/episodios/Episodio_6';
+import EpisodeInstagram7 from './pages/instagram/episodios/Episodio_7';
+import EpisodeInstagram8 from './pages/instagram/episodios/Episodio_8';
 
 import QuizzWhatsapp from './pages/quizzes/quizzWhatsapp';
 import './App.css';
@@ -39,9 +45,16 @@ const App: React.FC = () => {
 
         <Route path="/instagram/episodio/1" element={<EpisodeInstagram1 />} />
         <Route path="/instagram/episodio/2" element={<EpisodeInstagram2 />} />
+        <Route path="/instagram/episodio/3" element={<EpisodeInstagram3 />} />
+        <Route path="/instagram/episodio/4" element={<EpisodeInstagram4 />} />
+        <Route path="/instagram/episodio/5" element={<EpisodeInstagram5 />} />
+        <Route path="/instagram/episodio/6" element={<EpisodeInstagram6 />} />
+        <Route path="/instagram/episodio/7" element={<EpisodeInstagram7 />} />
+        <Route path="/instagram/episodio/8" element={<EpisodeInstagram8 />} />
 
 
         <Route path="/quizzes/whatsapp" element={<QuizzWhatsapp />} />
+        <Route path="/quizzes/instagram" element={<QuizzWhatsapp />} />
         
       </Routes>
     </Router>
