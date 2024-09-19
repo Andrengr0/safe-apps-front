@@ -11,7 +11,7 @@ const SobreSection: React.FC = () => {
                 O SafeAPPs é uma iniciativa educacional voltada para promover a segurança digital de forma acessível e interativa, especialmente para jovens estudantes. Criado com o objetivo de conscientizar e capacitar os usuários sobre os riscos e boas práticas no uso de aplicativos populares, como WhatsApp e Instagram, o SafeAPPs oferece conteúdo dinâmico e envolvente, incluindo vídeos tutoriais, dicas práticas e desafios interativos.
                 <br/>
                 <br/>
-                Desenvolvido por André de Negreiros em 2023, como parte de um projeto acadêmico da Universidade Federal da Paraíba (UFPB) e da Universidade Federal de Campina Grande (UFCG), o SafeAPPs busca contribuir para a formação de usuários mais informados e preparados para enfrentar as ameaças digitais do cotidiano.
+                Desenvolvido por André de Negreiros em 2024, teve início como parte de um projeto acadêmico da Universidade Federal da Paraíba (UFPB) evoluindo para um Trabalho de Conclusão de Curso (TCC), o SafeAPPs busca contribuir para a formação de usuários mais informados e preparados para enfrentar as ameaças digitais do cotidiano.
                 <br/>
                 <br/>
                 Nosso objetivo é proporcionar uma experiência de aprendizado intuitiva e prática, incentivando o uso seguro e consciente das redes sociais e aplicativos de comunicação. Confiamos que, ao utilizar nosso material, os usuários estarão mais equipados para proteger suas informações e navegar no ambiente digital com mais segurança.
