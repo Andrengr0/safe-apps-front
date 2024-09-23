@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import './Quizz.css';
 import QuizService from '@/services/api/QuizService';
+import { useNavigate } from 'react-router-dom';
 
 interface Question {
   id: number;
@@ -16,6 +17,7 @@ interface QuizProps {
 }
 
 const Quiz: React.FC<QuizProps> = ({ questions, quizTitle }) => {
+  const navigate = useNavigate();
   const { register, handleSubmit, setValue } = useForm();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
@@ -116,6 +118,10 @@ const Quiz: React.FC<QuizProps> = ({ questions, quizTitle }) => {
   const closeIncompleteModal = () => {
     setIsIncompleteModalOpen(false);
   };
+
+  function redirecionaQuizWhatsapp(){
+    navigate('/quizzes/whatsapp')
+}
 
   return (
     <div>
@@ -239,7 +245,7 @@ const Quiz: React.FC<QuizProps> = ({ questions, quizTitle }) => {
               <button
                 type="button"
                 className="retry-btn"
-                onClick={() => window.location.reload()}
+                onClick={redirecionaQuizWhatsapp}
               >
                 Refazer Quiz
               </button>
