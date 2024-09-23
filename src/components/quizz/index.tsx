@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import './Quizz.css'; // Importa o arquivo de estilo
+import './Quizz.css';
+import QuizService from '@/services/api/QuizService';
 
 interface Question {
   id: number;
@@ -11,20 +12,32 @@ interface Question {
 
 interface QuizProps {
   questions: Question[];
+  quizTitle: string;
 }
 
-const Quiz: React.FC<QuizProps> = ({ questions }) => {
+const Quiz: React.FC<QuizProps> = ({ questions, quizTitle }) => {
   const { register, handleSubmit, setValue } = useForm();
-  const [currentQuestion, setCurrentQuestion] = useState(0); // Controla a questão atual
-  const [answers, setAnswers] = useState<Record<number, string>>({}); // Armazena as respostas
-  const [score, setScore] = useState<number | null>(null); // Armazena a pontuação
-  const [feedback, setFeedback] = useState<string | null>(null); // Armazena o feedback
-  const [isModalOpen, setIsModalOpen] = useState(false); // Controla o estado do modal de feedback
-  const [isIncompleteModalOpen, setIsIncompleteModalOpen] = useState(false); // Estado para o modal de questões não respondidas
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [answers, setAnswers] = useState<Record<number, string>>({});
+  const [name, setName] = useState<string>('');  // Nome do usuário
+  const [isNameSubmitted, setIsNameSubmitted] = useState(false); // Verifica se o nome foi submetido
+  const [score, setScore] = useState<number | null>(null);
+  const [feedback, setFeedback] = useState<string | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isIncompleteModalOpen, setIsIncompleteModalOpen] = useState(false);
 
   const question = questions[currentQuestion];
   const totalQuestions = questions.length;
   const pointsPerQuestion = 100 / totalQuestions;
+
+  // Função para enviar o nome e começar o quiz
+  const handleNameSubmit = () => {
+    if (!name.trim()) {
+      alert('Por favor, insira o seu nome antes de começar o quiz.');
+      return;
+    }
+    setIsNameSubmitted(true);  // Nome válido, inicia o quiz
+  };
 
   const handleNext = () => {
     if (currentQuestion < totalQuestions - 1) {
@@ -38,22 +51,22 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
     }
   };
 
-  const onSubmitQuiz: SubmitHandler<any> = (data) => {
-
+  const onSubmitQuiz: SubmitHandler<any> = async (data) => {
     const unansweredQuestions = questions.filter(
       (question) => !data[question.id]
     );
-  
+
     if (unansweredQuestions.length > 0) {
-      setIsIncompleteModalOpen(true); // Abre o modal de alerta
-      return; // Não envia o quiz
+      alert('Por favor, responda todas as questões antes de enviar o quiz.');
+      setIsIncompleteModalOpen(true);
+      return;
     }
 
     let totalScore = 0;
 
     questions.forEach((question) => {
       if (data[question.id] === question.correctAnswer) {
-        totalScore += pointsPerQuestion; // Pontuação proporcional
+        totalScore += pointsPerQuestion;
       }
     });
 
@@ -70,7 +83,25 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
 
     setScore(totalScore);
     setFeedback(feedbackMessage);
-    setIsModalOpen(true); // Abre o modal ao enviar o quiz
+    setIsModalOpen(true);
+
+    // Preparar as respostas para o envio ao backend
+    const quizData = {
+      name,
+      quizId: quizTitle,
+      answers: questions.map((q) => ({
+        questionId: q.id.toString(),
+        correct: data[q.id] === q.correctAnswer,
+      })),
+    };
+
+    try {
+      // Chamar o serviço para enviar as respostas ao backend
+      await QuizService.submitAnswers(quizData);
+      console.log('Respostas enviadas com sucesso!');
+    } catch (error) {
+      console.error('Erro ao enviar respostas:', error);
+    }
   };
 
   const saveAnswer = (questionId: number, value: string) => {
@@ -84,13 +115,30 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
 
   const closeIncompleteModal = () => {
     setIsIncompleteModalOpen(false);
-  };  
+  };
 
   return (
     <div>
-      {score === null ? (
+      {!isNameSubmitted ? (
+        // Página inicial para o nome do usuário
+        <div className="name-form quiz-form">
+          <h2>Digite seu nome para começar o quiz:</h2>
+          <input
+            className='input-name'
+            id="name"
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Digite aqui..."
+            required
+          />
+          <button className="start-quiz-btn prev-btn" onClick={handleNameSubmit}>
+            Começar Quiz
+          </button>
+        </div>
+      ) : score === null ? (
         <form className="quiz-form" onSubmit={handleSubmit(onSubmitQuiz)}>
-          {/* Exibe o formulário antes do envio */}
+          {/* Exibe a questão atual */}
           <div className="quiz-question">
             <h4 className="question-title">{question.question}</h4>
             <div className="options-group">
@@ -110,6 +158,7 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
             </div>
           </div>
 
+          {/* Botões de navegação */}
           <div className="navigation-buttons">
             <button
               type="button"
@@ -132,7 +181,7 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
           </div>
         </form>
       ) : (
-        // Mantém o mesmo layout após o envio
+        // Mostrar feedback após envio
         <div className="quiz-form">
           <div className="quiz-question">
             <h4 className="question-title">{question.question}</h4>
@@ -141,13 +190,12 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
                 const isCorrect = option === question.correctAnswer;
                 const isSelected = answers[question.id] === option;
 
-                // Definindo a cor de fundo com base na resposta correta/incorreta
                 const backgroundColor =
                   isSelected && isCorrect
-                    ? '#a0c5a2' // Resposta correta
+                    ? '#a0c5a2'
                     : isSelected && !isCorrect
-                    ? '#e08282' // Resposta incorreta
-                    : 'transparent'; // Opções não selecionadas ou não relevantes
+                    ? '#e08282'
+                    : 'transparent';
 
                 return (
                   <label

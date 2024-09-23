@@ -1,6 +1,6 @@
 import React from 'react';
 import Quiz from '@/components/quizz';
-import '../QuizTema.css';
+import '../QuizTema.css'; // Verifique se o caminho está correto
 
 const QuizzWhatsapp: React.FC = () => {
   // Questões do quiz
@@ -64,7 +64,8 @@ const QuizzWhatsapp: React.FC = () => {
   return (
     <div className='quizz-tema-whatsapp'>
       <h1 className='tittle-quizz-tema'>Quiz Whatsapp</h1>
-      <Quiz questions={questions} />
+      {/* Passar também o título ou ID do quiz */}
+      <Quiz questions={questions} quizTitle="Whatsapp" />  
     </div>
   );
 };
