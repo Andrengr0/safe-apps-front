@@ -15,12 +15,12 @@ const QuizzSection: React.FC = () => {
     }
 
     function redirecionaQuizTiktok(){
-        navigate('/quizzes/whatsapp')
+        navigate('/quizzes/tiktok')
     }
 
-    function redirecionaQuizCassino(){
-        navigate('/quizzes/whatsapp')
-    }
+    // function redirecionaQuizCassino(){
+    //     navigate('/quizzes/whatsapp')
+    // }
 
     
     return (
@@ -40,9 +40,9 @@ const QuizzSection: React.FC = () => {
                     <button className="btn-12 btn-tiktok"><span>Quizz TikTok</span></button>
                 </div>
 
-                <div className='btn-single' onClick={redirecionaQuizCassino}>
+                {/* <div className='btn-single' onClick={redirecionaQuizCassino}>
                     <button className="btn-12 btn-cassino"><span>Quizz Cassino</span></button>
-                </div>
+                </div> */}
             </div>
        </div>
     );

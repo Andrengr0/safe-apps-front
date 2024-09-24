@@ -5,7 +5,7 @@ import './SeriesSection.css';
 import whatsappImage from '@/assets/images/img_whatsapp.png';
 import instagramImage from '@/assets/images/img_instagram.png';
 import tiktokImage from '@/assets/images/img_tiktok.png';
-import cassinosImage from '@/assets/images/img_cassino.png';
+// import cassinosImage from '@/assets/images/img_cassino.png';
 
 
 const SeriesSection: React.FC = () => {
@@ -19,12 +19,12 @@ const seriesData = [
         episodes: [
             { title: 'Episódio 01', description: 'Navegando com Segurança...' },
             { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
-            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
-            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
-            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
-            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
-            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
-            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 03', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 04', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 05', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 06', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 07', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 08', description: 'Protegendo suas mensagens...' },
         ]
     },
     {
@@ -35,7 +35,12 @@ const seriesData = [
         episodes: [
             { title: 'Episódio 01', description: 'Navegando com Segurança...' },
             { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
-            // Mais episódios...
+            { title: 'Episódio 03', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 04', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 05', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 06', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 07', description: 'Protegendo suas mensagens...' },
+            { title: 'Episódio 08', description: 'Protegendo suas mensagens...' },
         ]
     },
     {
@@ -44,22 +49,24 @@ const seriesData = [
         imageUrl: tiktokImage,
         platform: 'tiktok',
         episodes: [
-            { title: 'Episódio 01', description: 'Navegando com Segurança...' },
-            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
-            // Mais episódios...
+            { title: 'Episódio 01', description: 'Tiktok mais seguro' },
+            { title: 'Episódio 02', description: 'Configuração da verificação em duas etapas' },
+            { title: 'Episódio 03', description: 'Alertas de segurança' },
+            { title: 'Episódio 04', description: 'Atualize seus aplicativos' },
+            { title: 'Episódio 05', description: 'Utilize senhas fortes' },
         ]
     },
-    {
-        title: 'Cassinos',
-        description: 'Entenda os riscos dos jogos de apostas online, e se defenda contra possíveis danos financeiros ou psicológicos.',
-        imageUrl: cassinosImage,
-        platform: 'cassinos',
-        episodes: [
-            { title: 'Episódio 01', description: 'Navegando com Segurança...' },
-            { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
-            // Mais episódios...
-        ]
-    }
+    // {
+    //     title: 'Cassinos',
+    //     description: 'Entenda os riscos dos jogos de apostas online, e se defenda contra possíveis danos financeiros ou psicológicos.',
+    //     imageUrl: cassinosImage,
+    //     platform: 'cassinos',
+    //     episodes: [
+    //         { title: 'Episódio 01', description: 'Navegando com Segurança...' },
+    //         { title: 'Episódio 02', description: 'Protegendo suas mensagens...' },
+    //         // Mais episódios...
+    //     ]
+    // }
 ];
 
     return (
@@ -76,7 +83,7 @@ const seriesData = [
                                     description={series.description}
                                     imageUrl={series.imageUrl}
                                     episodes={series.episodes}
-                                    platform={series.platform}  // Passando a plataforma correta para cada CardSeries
+                                    platform={series.platform}
                                 />
                             ))}
                         </div>

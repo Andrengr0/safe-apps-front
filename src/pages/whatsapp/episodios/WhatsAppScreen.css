@@ -302,7 +302,8 @@ label {
 
 .whatsapp-container {
   background-color: #0c5f50;
-  max-width: 700px;
+  max-width: 1200px;
+  text-align: center;
   width: 100%;
   padding: 20px;
   border-radius: 10px;
@@ -315,6 +316,10 @@ label {
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 0;
+}
+
+.buttons{
+  text-align: left !important;
 }
 
 .box-resultado{
