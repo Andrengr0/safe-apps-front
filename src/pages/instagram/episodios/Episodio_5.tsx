@@ -11,7 +11,7 @@ const Episodio_5: React.FC = () => {
           Que tal agora colocar mais privacidade no seu Instagram e ter maior controle sobre ele? Assista ao vídeo e entenda como:
         </p>
         <div className="box-video mt-4">
-          <iframe src="https://www.youtube.com/embed/ZPGFyFpdLXc" allowFullScreen></iframe>
+          <iframe src="https://www.youtube.com/embed/x-Sn1yvzUCc?si=z4DNOqMWj4BGfZUe" allowFullScreen></iframe>
         </div>
 
         <div className="buttons">

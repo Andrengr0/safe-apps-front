@@ -10,7 +10,7 @@ const Episodio_1: React.FC = () => {
         <h2 className="subtitle">Vamos aos primeiros passos para deixar seu Instagram mais seguro:</h2>
 
         <div className="box-video">
-          <iframe src="https://www.youtube.com/embed/wVw8nd4wOn8" allowFullScreen></iframe>
+          <iframe src="https://www.youtube.com/embed/Za8O9Rr567o?si=QrF0BUEUmY4tbhR1" allowFullScreen></iframe>
         </div>
 
         <p className="box-write">
@@ -18,7 +18,7 @@ const Episodio_1: React.FC = () => {
         </p>
 
         <div className="box-video">
-          <iframe src="https://www.youtube.com/embed/6Ki_ARespss" allowFullScreen></iframe>
+          <iframe src="https://www.youtube.com/embed/psd9Pcc1J90?si=PIMBbPm4UskLFNKv" allowFullScreen></iframe>
         </div>
 
         <h6 style={{textAlign: 'center'}}>Está pronto para um desafio?</h6>

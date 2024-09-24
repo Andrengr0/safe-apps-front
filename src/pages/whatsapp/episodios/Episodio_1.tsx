@@ -10,7 +10,7 @@ const Episodio_1: React.FC = () => {
         <h2 className="subtitle">Vamos aos primeiros passos para deixar seu whatsapp mais seguro:</h2>
 
         <div className="box-video">
-          <iframe src="https://www.youtube.com/embed/U75m_1WCndw" allowFullScreen></iframe>
+          <iframe src="https://www.youtube.com/embed/MiKA1OvvsA4?si=i7fWuYoRI9cV4aZZ" allowFullScreen></iframe>
         </div>
 
         <p className="box-write">
@@ -18,7 +18,7 @@ const Episodio_1: React.FC = () => {
         </p>
 
         <div className="box-video">
-          <iframe src="https://www.youtube.com/embed/3g4kfKSSKjc" allowFullScreen></iframe>
+          <iframe src="https://www.youtube.com/embed/51B1pKGpVTE?si=puHjVWxeYx6ZGznz" allowFullScreen></iframe>
         </div>
 
         <div className="buttons">
