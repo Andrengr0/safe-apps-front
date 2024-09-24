@@ -21,6 +21,8 @@ import EpisodeInstagram7 from './pages/instagram/episodios/Episodio_7';
 import EpisodeInstagram8 from './pages/instagram/episodios/Episodio_8';
 
 import QuizzWhatsapp from './pages/quizzes/quizzWhatsapp';
+import QuizzInstagram from './pages/quizzes/quizzInstagram';
+
 import './App.css';
 
 import Sobre from './pages/sobre';
@@ -54,7 +56,7 @@ const App: React.FC = () => {
 
 
         <Route path="/quizzes/whatsapp" element={<QuizzWhatsapp />} />
-        <Route path="/quizzes/instagram" element={<QuizzWhatsapp />} />
+        <Route path="/quizzes/instagram" element={<QuizzInstagram />} />
         
       </Routes>
     </Router>

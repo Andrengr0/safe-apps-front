@@ -59,7 +59,7 @@ const Quiz: React.FC<QuizProps> = ({ questions, quizTitle }) => {
     );
 
     if (unansweredQuestions.length > 0) {
-      alert('Por favor, responda todas as questões antes de enviar o quiz.');
+      // alert('Por favor, responda todas as questões antes de enviar o quiz.');
       setIsIncompleteModalOpen(true);
       return;
     }
