@@ -10,6 +10,7 @@ import EpisodeWhatsApp5 from './pages/whatsapp/episodios/Episodio_5';
 import EpisodeWhatsApp6 from './pages/whatsapp/episodios/Episodio_6';
 import EpisodeWhatsApp7 from './pages/whatsapp/episodios/Episodio_7';
 import EpisodeWhatsApp8 from './pages/whatsapp/episodios/Episodio_8';
+import EpisodeWhatsApp9 from './pages/whatsapp/episodios/Episodio_9';
 
 import EpisodeInstagram1 from './pages/instagram/episodios/Episodio_1';
 import EpisodeInstagram2 from './pages/instagram/episodios/Episodio_2';
@@ -19,6 +20,7 @@ import EpisodeInstagram5 from './pages/instagram/episodios/Episodio_5';
 import EpisodeInstagram6 from './pages/instagram/episodios/Episodio_6';
 import EpisodeInstagram7 from './pages/instagram/episodios/Episodio_7';
 import EpisodeInstagram8 from './pages/instagram/episodios/Episodio_8';
+import EpisodeInstagram9 from './pages/instagram/episodios/Episodio_9';
 
 import QuizzWhatsapp from './pages/quizzes/quizzWhatsapp';
 import './App.css';
@@ -41,6 +43,7 @@ const App: React.FC = () => {
         <Route path="/whatsapp/episodio/6" element={<EpisodeWhatsApp6 />} />
         <Route path="/whatsapp/episodio/7" element={<EpisodeWhatsApp7 />} />
         <Route path="/whatsapp/episodio/8" element={<EpisodeWhatsApp8 />} />
+        <Route path="/whatsapp/episodio/9" element={<EpisodeWhatsApp9 />} />
         
 
         <Route path="/instagram/episodio/1" element={<EpisodeInstagram1 />} />
@@ -51,6 +54,7 @@ const App: React.FC = () => {
         <Route path="/instagram/episodio/6" element={<EpisodeInstagram6 />} />
         <Route path="/instagram/episodio/7" element={<EpisodeInstagram7 />} />
         <Route path="/instagram/episodio/8" element={<EpisodeInstagram8 />} />
+        <Route path="/instagram/episodio/9" element={<EpisodeInstagram9 />} />
 
 
         <Route path="/quizzes/whatsapp" element={<QuizzWhatsapp />} />
