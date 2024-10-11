@@ -16,13 +16,33 @@
 
 .instagram-container {
   background-color: #833AB4;
-  max-width: 700px;
+  max-width: 920px;
   width: 100%;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
+}
+
+.mt-5{
+  margin-top: 1.5rem;
+}
+
+.mt-4{
+  margin-top: 1.2rem;
+}
+
+.mb-5{
+  margin-bottom: 1.5rem;
+}
+
+.description{
+  font-size: 1rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .cabecalho {

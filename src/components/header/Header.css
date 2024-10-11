@@ -45,7 +45,6 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    margin: 0.5rem;
 }
 
 /* Menu tradicional visível apenas em telas maiores */
@@ -158,3 +157,63 @@
         margin-right: 10px;
     }
 }
+
+/* Dropdown para desktop */
+/* Dropdown para desktop */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 1.2rem;
+    top: 1.3rem;
+    background-color: #333;
+    list-style: none;
+    padding: 0; /* Remove o padding extra */
+    margin: 0; /* Remove o margin */
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    padding: 0 20px;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Garante que o link ocupe toda a área do item */
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #000;
+}
+
+/* Dropdown para mobile */
+.dropdown-mobile {
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding: 10px;
+}
+
+.dropdown-mobile-menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown-mobile-menu a:hover {
+    background-color: #000;
+}
+

@@ -7,7 +7,7 @@ const Episodio_2: React.FC = () => {
     <div className="tiktok-screen">
       <div className="tiktok-container">
         <h1 className="cabecalho">Episódio #02 - TikTok</h1>
-        <h2 className="subtitle">Configuração da verificação em duas etapas:</h2>
+        <h2 className="subtitle mt-4">Configuração da verificação em duas etapas:</h2>
 
         <div className="box-video">
           <iframe src="https://www.youtube.com/embed/s6mrdv5J_nc?si=K9ljpFG7lt8Z_JGj" allowFullScreen></iframe>

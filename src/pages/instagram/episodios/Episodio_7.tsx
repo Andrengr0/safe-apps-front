@@ -6,7 +6,7 @@ const Episodio_7: React.FC = () => {
   return (
     <div className="instagram-screen">
       <div className="instagram-container">
-        <h1 className="cabecalho">Episódio #02 - Instagram: medidas protetivas</h1>
+        <h1 className="cabecalho">Episódio #07 - Instagram</h1>
         <p className="box-write">
           Já verificou se seu aplicativo está atualizado? observe como fazer:
         </p>

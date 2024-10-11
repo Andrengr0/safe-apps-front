@@ -6,7 +6,7 @@ const Episodio_4: React.FC = () => {
   return (
     <div className="whatsapp-screen">
       <div className="whatsapp-container">
-        <h1 className="cabecalho">Episódio #01 - Whatsapp: medidas protetivas</h1>
+        <h1 className="cabecalho">Episódio #04 - Whatsapp</h1>
         <p className="box-write">
           Você sabe o que é uma senha forte e como criá-la? Assista ao vídeo abaixo para entender.
         </p>

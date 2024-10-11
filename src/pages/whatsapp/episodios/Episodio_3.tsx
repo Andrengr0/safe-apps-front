@@ -6,7 +6,7 @@ const Episodio_3: React.FC = () => {
   return (
     <div className="whatsapp-screen">
       <div className="whatsapp-container">
-        <h1 className="cabecalho">Episódio #01 - Whatsapp: medidas protetivas</h1>
+        <h1 className="cabecalho">Episódio #03 - Whatsapp</h1>
         <div className="card mt-5">
           <h2 className="p-3">PARABÉNS!!!</h2>
           <h4 className="text-center p-3">Você concluiu o primeiro desafio e está no caminho certo, tornando seu aplicativo mais seguro!</h4>

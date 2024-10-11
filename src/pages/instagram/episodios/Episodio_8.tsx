@@ -8,7 +8,7 @@ const Episodio_8: React.FC = () => {
   return (
     <div className="instagram-screen">
       <div className="instagram-container">
-        <h1 className="cabecalho">Episódio #02 - Instagram: medidas protetivas</h1>
+        <h1 className="cabecalho">Episódio #08 - Instagram</h1>
         <h4 className="description text-center">Agora vamos observar dicas adicionais para fortalecer a segurança do seu aplicativo:</h4>
 
         <div className="box-write">

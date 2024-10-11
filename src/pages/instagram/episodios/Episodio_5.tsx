@@ -6,7 +6,7 @@ const Episodio_5: React.FC = () => {
   return (
     <div className="instagram-screen">
       <div className="instagram-container">
-        <h1 className="cabecalho">Episódio #02 - Instagram: medidas protetivas</h1>
+        <h1 className="cabecalho">Episódio #05 - Instagram</h1>
         <p className="box-write">
           Que tal agora colocar mais privacidade no seu Instagram e ter maior controle sobre ele? Assista ao vídeo e entenda como:
         </p>

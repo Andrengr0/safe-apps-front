@@ -6,9 +6,9 @@ const Episodio_5: React.FC = () => {
   return (
     <div className="whatsapp-screen">
       <div className="whatsapp-container">
-        <h1 className="cabecalho">Episódio #01 - Whatsapp: medidas protetivas</h1>
+        <h1 className="cabecalho">Episódio #05 - Whatsapp</h1>
         <p className="box-write">
-          Sabia que existe um recurso para bloquear determinada conversa no whatsapp? Onde sempre que quiser entrar naquela conversa o app vai pedir a senha ou biometria, confira no vídeo:
+          Sabia que existe um recurso para impedir acesso a uma determinada conversa no whatsapp? Onde sempre que desejar entrar naquela conversa o app vai pedir a senha ou biometria. Confira no vídeo:
         </p>
         <div className="box-video mt-4">
           <iframe src="https://www.youtube.com/embed/M7iX0jVbkU8?si=ATzQ3N6NS-xMiVBt" allowFullScreen></iframe>

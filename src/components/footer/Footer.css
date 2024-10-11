@@ -7,6 +7,13 @@
     align-items: center;
 }
 
+@media (max-width: 480px) {
+    .footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
 
 .ufpb-logo {
     height: 4rem;
@@ -19,4 +26,15 @@
 
 .developers a {
     color: white;
+}
+
+.links_footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.links_footer a{
+    color: #fff;
+    margin-top: 5px;
 }

@@ -6,9 +6,9 @@ const Episodio_6: React.FC = () => {
   return (
     <div className="instagram-screen">
       <div className="instagram-container">
-        <h1 className="cabecalho">Episódio #02 - Instagram: medidas protetivas</h1>
+        <h1 className="cabecalho">Episódio #06 - Instagram</h1>
         <p className="box-write">
-          Que tal agora receber alertas toda vez que tentarem entrar no seu Instagram e ter maior controle sobre ele? Assista ao vídeo e entenda como:
+          Como receber alertas sempre que tentarem entrar no seu Instagram e ter maior controle sobre ele? Assista ao vídeo e entenda como:
         </p>
         <div className="box-video mt-4">
           <iframe src="https://www.youtube.com/embed/e4A4PY1Vt_Q?si=OAhLdJmQQQkfc8UV" allowFullScreen></iframe>

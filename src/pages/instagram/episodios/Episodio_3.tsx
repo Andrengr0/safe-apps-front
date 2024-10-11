@@ -6,7 +6,7 @@ const Episodio_3: React.FC = () => {
   return (
     <div className="instagram-screen">
       <div className="instagram-container">
-        <h1 className="cabecalho">Episódio #02 - Instagram: medidas protetivas</h1>
+        <h1 className="cabecalho">Episódio #03 - Instagram</h1>
         <div className="card">
           <h2>PARABÉNS!!!</h2>
           <h4>Você concluiu o primeiro desafio e está no caminho certo, tornando seu aplicativo mais seguro!</h4>

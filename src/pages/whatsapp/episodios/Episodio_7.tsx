@@ -6,7 +6,7 @@ const Episodio_7: React.FC = () => {
   return (
     <div className="whatsapp-screen">
       <div className="whatsapp-container">
-        <h1 className="cabecalho">Episódio #01 - Whatsapp: medidas protetivas</h1>
+        <h1 className="cabecalho">Episódio #07 - Whatsapp</h1>
         <p className="box-write">
           Já verificou se seu aplicativo está atualizado? observe como fazer:
         </p>

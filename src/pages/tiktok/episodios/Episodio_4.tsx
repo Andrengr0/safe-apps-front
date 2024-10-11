@@ -7,7 +7,7 @@ const Episodio_4: React.FC = () => {
     <div className="tiktok-screen">
       <div className="tiktok-container">
         <h1 className="cabecalho">Episódio #04 - TikTok</h1>
-        <h2 className="subtitle">Atualize seus aplicativos:</h2>
+        <h2 className="subtitle mt-4">Atualize seus aplicativos:</h2>
 
         <div className="box-video">
           <iframe src="https://www.youtube.com/embed/xK4a03lRrwY?si=_dYIUln7eXe34J4z" allowFullScreen></iframe>
